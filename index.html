@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>TEST</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.css" integrity="sha256-+dIh4jG2jQTHZwW81yUo8h6tzXWcNumyNL5XPZbwp1E=" crossorigin="anonymous" />
+  <link rel="stylesheet" type="text/css" href="main.css" charset="utf-8" />
+</head>
+
+<body>
+  <header class="z-max fixed top-0 h-100 bg-white br">
+    <nav class="flex flex-column-ns">
+      <a class="link bb black hover-bg-light-silver vh-third flex items-center justify-center" href="#"><img class="pa2" src="Issue.svg" alt=""></a>
+      <a class="link bb black hover-bg-light-silver vh-third flex items-center justify-center" href="#"><img class="pa2" src="Tentang.svg" alt=""></a>
+      <a class="link bb black hover-bg-light-silver vh-third flex items-center justify-center" href="#"><img class="pa2" src="Kontak.svg" alt=""></a>
+    </nav>
+  </header>
+
+  <div class="transparent z-1 w-100 vh-100 flex justify-center items-center fixed">
+    <img class="w-50-ns w-80 flip-vertical-right" src="logo.svg" alt="">
+  </div>
+
+  <div id="fullpage" class="container fr">
+
+    <div class="section w-100 vh-100 cover flex items-end justify-end" style="background:url(ichi.png) center">
+      <a href="#" class="link flex flex-column white underline-hover tr f-headline pa4 w-70">
+        <span>Issue #01</span>
+        <span>A Very Bad Quack Might Jinx The Zippy Fowls</span>
+      </a>
+    </div>
+
+    <div class="section w-100 vh-100 cover flex items-end justify-end" style="background:url(ichi2.png) center">
+      <a href="#" class="link flex flex-column white underline-hover tr f-headline pa4 w-70">
+        <span>Issue #02</span>
+        <span>Jinxed Wizards Pluck Ivy From The Big Quilt</span>
+      </a>
+    </div>
+
+    <div class="section w-100 vh-100 cover flex items-end justify-end" style="background:url(Untitled.png) center">
+      <a href="#" class="link flex flex-column white underline-hover tr f-headline pa4 w-70">
+        <span>Issue #03</span>
+        <span>The Quick Brown Fox Jumps Over The Lazy Dog</span>
+      </a>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.extensions.min.js" integrity="sha256-pwVO9xs/zTEUDEzK1G4AbAAZbAzmU30SniNu2b9O0UY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.js" integrity="sha256-caNcSA0LvOCX90PTuEbwl+V09xPMca13CJUasl+VCtk=" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    new fullpage('#fullpage', {
+      //options here
+      autoScrolling: true,
+      verticalCentered: false,
+      dragAndMove: true,
+    });
+
+    //methods
+    fullpage_api.setAllowScrolling(true);
+  </script>
+</body>
+
+</html>
